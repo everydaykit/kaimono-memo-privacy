@@ -1,0 +1,273 @@
+<!doctype html>
+<!--
+  かいものメモ プライバシーポリシー（公開用ページ）
+
+  本文の正は docs/privacy-policy.md。**内容を変えるときは両方を直すこと。**
+  このファイルは外部ホスティングにそのまま置けるよう、CSS も含めて
+  1ファイルで完結させてある（フォント等の外部リソースを読み込まないので、
+  オフラインでも審査担当者の環境でも確実に表示される）。
+
+  公開手順は docs/privacy-policy.md 末尾の「公開方法」を参照。
+  ✅ 提供者名は置き換え済み（2026-09-05、Masaru Morikawa。
+  App Store の「販売元」表示と一致させてある）。
+-->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>かいものメモ プライバシーポリシー</title>
+    <meta name="description" content="買い物リストアプリ「かいものメモ」のプライバシーポリシー" />
+    <style>
+      :root {
+        --brand: #1e88e5;
+        --text: #1a1c1e;
+        --muted: #60646c;
+        --border: #dcdfe3;
+        --surface: #f6f7f9;
+        --bg: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --brand: #4fa3f7;
+          --text: #f2f3f5;
+          --muted: #b0b4ba;
+          --border: #33363b;
+          --surface: #1a1b1e;
+          --bg: #121316;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 0 20px 64px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP',
+          'Yu Gothic UI', sans-serif;
+        line-height: 1.85;
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+      }
+      main { max-width: 46rem; margin: 0 auto; }
+      header {
+        border-bottom: 4px solid var(--brand);
+        padding: 40px 0 20px;
+        margin-bottom: 32px;
+      }
+      h1 { font-size: 1.6rem; margin: 0 0 8px; line-height: 1.4; }
+      h2 {
+        font-size: 1.2rem;
+        margin: 44px 0 12px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--border);
+      }
+      h3 { font-size: 1.02rem; margin: 28px 0 8px; color: var(--brand); }
+      p, li { overflow-wrap: anywhere; }
+      ul { padding-left: 1.3em; }
+      li { margin: 6px 0; }
+      .date { color: var(--muted); font-size: 0.9rem; margin: 0; }
+      .lead {
+        background: var(--surface);
+        border-left: 4px solid var(--brand);
+        padding: 16px 20px;
+        border-radius: 0 8px 8px 0;
+        margin: 24px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0;
+        font-size: 0.94rem;
+      }
+      th, td {
+        border: 1px solid var(--border);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th { background: var(--surface); font-weight: 600; }
+      strong { font-weight: 700; }
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>かいものメモ プライバシーポリシー</h1>
+        <p class="date">制定日: 2026年9月4日</p>
+      </header>
+
+      <p>
+        「かいものメモ」（以下「本アプリ」）は、利用者のプライバシーを尊重し、個人情報の保護に努めます。
+        本ポリシーは、本アプリが取得する情報と、その使い道を説明するものです。
+      </p>
+
+      <h2>1. 基本的な考え方</h2>
+      <div class="lead">
+        <strong>本アプリは、アカウントを作らなくても使えます。</strong>
+        買い物リストの作成・商品の管理・購入履歴の記録は、すべて<strong>利用者の端末の中だけ</strong>で完結します。
+      </div>
+      <p>サーバーに情報が送られるのは、次の3つの機能を利用者が自分で使ったときだけです。</p>
+      <table>
+        <thead>
+          <tr><th>機能</th><th>サーバーに送られるもの</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ログイン</td><td>メールアドレス・表示名</td></tr>
+          <tr><td>リストの共有</td><td>共有するリストの名前と、その中の商品の情報</td></tr>
+          <tr><td>位置リマインダー</td><td>登録したお店の名前・住所・位置座標</td></tr>
+        </tbody>
+      </table>
+      <p>これらを使わない限り、本アプリは利用者の情報を外部に送信しません。</p>
+
+      <h2>2. 取得する情報</h2>
+
+      <h3>2-1. アカウント情報</h3>
+      <p>ログイン機能を利用した場合に限り、以下を取得します。</p>
+      <ul>
+        <li><strong>メールアドレス</strong></li>
+        <li><strong>表示名</strong></li>
+      </ul>
+      <p>
+        これらは Google・LINE（および今後 Apple）のログインサービスから提供されるものです。
+        <strong>パスワードを本アプリが受け取ることはありません。</strong>
+      </p>
+      <p>
+        表示名は、リストを共有した相手に「誰からの招待か」を示すために表示されます。アプリ内でいつでも変更できます。
+      </p>
+
+      <h3>2-2. 買い物リストの内容</h3>
+      <p>
+        リストの名前、商品の名前・ブランド・容量・数量・単位・メモ、購入済みかどうか、購入した日時。
+      </p>
+      <p>
+        <strong>リストを共有したときに限り</strong>、そのリストの内容がサーバーに保存され、共有相手が閲覧できるようになります。
+        共有していないリストは端末内に留まります。
+      </p>
+
+      <h3>2-3. お店の情報</h3>
+      <p>利用者が登録したお店の名前・住所・位置座標（緯度経度）・通知する範囲。</p>
+      <p>
+        <strong>位置リマインダーを有効にしたとき、またはリストを共有したときに限り</strong>、サーバーに保存されます。
+      </p>
+
+      <h3>2-4. 位置情報</h3>
+      <p>
+        位置リマインダー（登録したお店の近くに来たら買い忘れを知らせる機能）を有効にした場合に限り、端末の位置情報を利用します。
+      </p>
+      <ul>
+        <li>
+          <strong>利用者の現在地がサーバーに送信されることはありません。</strong>
+          現在地は、監視対象とするお店を近い順に選ぶために<strong>端末の中だけ</strong>で使われます
+        </li>
+        <li>通知は端末内で組み立てて表示されます。<strong>外部の通知サーバーは使いません</strong></li>
+        <li>この機能はいつでも設定画面から無効にできます。無効にすると位置情報の利用を停止します</li>
+      </ul>
+      <p>
+        なお、お店の位置を地図から設定する際にも、地図の初期表示位置を決めるために現在地を利用します。
+        この場合も現在地はサーバーに送信されません。
+      </p>
+
+      <h3>2-5. 取得しないもの</h3>
+      <p>本アプリは以下を<strong>取得しません</strong>。</p>
+      <ul>
+        <li>連絡先・写真・カレンダーなど、端末内の他のアプリのデータ</li>
+        <li>利用者の行動を追跡するための識別子</li>
+        <li>利用状況の解析（アクセス解析・クラッシュ解析のSDKを組み込んでいません）</li>
+      </ul>
+
+      <h2>3. 利用目的</h2>
+      <p>取得した情報は、次の目的にのみ利用します。</p>
+      <ul>
+        <li>買い物リストの作成・表示・共有という、本アプリの機能を提供するため</li>
+        <li>共有相手に、誰から共有されたリストかを示すため</li>
+        <li>購入履歴から次に買う時期を推定し、買い忘れを提案するため</li>
+        <li>登録したお店の近くに来たときに通知するため</li>
+      </ul>
+      <p><strong>利用者の同意なく、上記以外の目的に利用することはありません。</strong></p>
+
+      <h2>4. 第三者への提供</h2>
+      <p>
+        <strong>取得した情報を、販売したり、広告目的で第三者に提供したりすることはありません。</strong>
+      </p>
+      <p>本アプリの機能を提供するため、以下のサービスを利用しています。</p>
+      <table>
+        <thead>
+          <tr><th>事業者</th><th>用途</th><th>送られる情報</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Amazon Web Services (AWS)</td><td>データの保管・処理</td><td>第2章のうちサーバーに保存されるもの</td></tr>
+          <tr><td>Google LLC</td><td>ログイン</td><td>メールアドレス・表示名（本アプリが受け取る側）</td></tr>
+          <tr><td>LINEヤフー株式会社</td><td>ログイン</td><td>同上</td></tr>
+          <tr><td>Apple Inc.</td><td>ログイン（iOS）</td><td>同上</td></tr>
+          <tr><td>Apple Inc.</td><td>地図の表示・住所の検索（iOS）</td><td>表示中の地図の位置、検索した住所の文字列</td></tr>
+          <tr><td>Google LLC</td><td>地図の表示・住所の検索（Android）</td><td>同上</td></tr>
+        </tbody>
+      </table>
+      <p>
+        サーバー上のデータは <strong>AWS の東京リージョン（ap-northeast-1）</strong> に保存されます。
+      </p>
+      <p>
+        住所から地図上の位置を調べる機能（住所欄の検索）は、端末が備える地図サービスを利用するため、
+        入力した住所の文字列が上記の地図事業者に送信されます。
+      </p>
+
+      <h2>5. 端末内に保存される情報</h2>
+      <p>
+        本アプリは、買い物リスト・お店・購入履歴を端末内のデータベースに保存します。
+        ログインしている場合は、ログイン状態を保つための認証トークンを、端末の安全な保管領域（iOS:
+        キーチェーン、Android: Keystore）に保存します。
+      </p>
+      <p><strong>本アプリをアンインストールすると、端末内のこれらの情報は削除されます。</strong></p>
+
+      <h2>6. 保存期間と削除</h2>
+      <ul>
+        <li>サーバー上の情報は、アカウントが存在する間、保存されます</li>
+        <li>
+          <strong>アプリ内の「設定」画面から、いつでもアカウントを削除できます。</strong>
+          削除すると、アカウント情報・お店・購入履歴と、利用者しか参加していない買い物リストが、サーバーと端末の両方から削除されます
+        </li>
+        <li>
+          <strong>他の人と共有中のリストは、他の参加者のために残ります。</strong>
+          利用者はそのリストから外れ、以後アクセスできなくなります
+        </li>
+        <li>招待コードは発行から7日で自動的に無効になり、削除されます</li>
+      </ul>
+
+      <h2>7. お子様の情報</h2>
+      <p>本アプリは、13歳未満の方から意図的に個人情報を取得することはありません。</p>
+
+      <h2>8. 安全管理</h2>
+      <ul>
+        <li>端末とサーバーの間の通信は、すべて暗号化（HTTPS）しています</li>
+        <li>サーバー上のデータは暗号化して保存しています</li>
+        <li>各利用者は、自分が参加しているリストと、自分が登録したお店にのみアクセスできます</li>
+      </ul>
+
+      <h2>9. 本ポリシーの変更</h2>
+      <p>
+        法令の変更や機能の追加に応じて、本ポリシーを改定することがあります。
+        重要な変更を行う場合は、アプリ内またはストアの説明欄でお知らせします。
+      </p>
+      <p>
+        <strong>現時点で、本アプリは広告を表示していません。</strong>
+        将来的に広告を導入する場合は、導入前に本ポリシーを改定し、取得する情報を明示します。
+      </p>
+
+      <h2>10. お問い合わせ</h2>
+      <p>本ポリシーおよび個人情報の取り扱いに関するお問い合わせは、以下までご連絡ください。</p>
+      <ul>
+        <li>提供者: Masaru Morikawa</li>
+        <li>連絡先: okaimonolistapp@gmail.com</li>
+      </ul>
+
+      <footer>かいものメモ</footer>
+    </main>
+  </body>
+</html>
